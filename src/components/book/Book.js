@@ -1,8 +1,9 @@
 import './book.css';
 
-export default function Book({
-  percentage, category, title, author, chapter, id, setData, data,
-}) {
+export default function Book({ item, data, setData }) {
+  const {
+    percent, category, title, author, chapter, id,
+  } = item;
   const deleteBook = () => {
     setData(data.filter((item) => item.id !== id));
   };
@@ -27,7 +28,7 @@ export default function Book({
       </div>
       <div className="container-percent">
         <span className="-Percent-Complete">
-          {percentage}
+          {percent}
           %
         </span>
         <span className="Completed Text-Style-2">Completed</span>
