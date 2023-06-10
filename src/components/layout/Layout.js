@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { NavLink, Outlet } from 'react-router-dom';
 import './layout.css';
 

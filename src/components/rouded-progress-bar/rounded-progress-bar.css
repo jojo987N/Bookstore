@@ -3,12 +3,14 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
+
   /* background: conic-gradient(red calc(10%), gray 0deg); */
   font-size: 0;
 }
 
 .rounded-progress::after {
   content: "";
+
   /* content: attr(data-progress) '%'; */
   display: flex;
   justify-content: center;
