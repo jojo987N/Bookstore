@@ -1,9 +1,12 @@
+import { useState } from 'react';
+import RoundedProgressBar from '../rouded-progress-bar/RoundedProgressBar';
 import './book.css';
 
 export default function Book({ item, data, setData }) {
   const {
     percent, category, title, author, chapter, id,
   } = item;
+  const [progress, setProgress] = useState(0);
   const deleteBook = () => {
     setData(data.filter((item) => item.id !== id));
   };
@@ -24,11 +27,12 @@ export default function Book({ item, data, setData }) {
         </div>
       </div>
       <div className="container-circular">
-        <div className="circular-progress" />
+        {/* <div className="circular-progress" /> */}
+        <RoundedProgressBar progress={progress} setProgress={setProgress} percent={percent} />
       </div>
       <div className="container-percent">
         <span className="-Percent-Complete">
-          {percent}
+          {progress}
           %
         </span>
         <span className="Completed Text-Style-2">Completed</span>
