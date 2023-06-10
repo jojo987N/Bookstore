@@ -12,7 +12,7 @@ const database = [
     category: 'Science Fiction',
     title: 'Dune',
     author: 'Frank Herbert',
-    percent: 8,
+    percent: 50,
     chapter: 'Chapter 3: "A Lesson Learned"',
   },
   {
@@ -20,7 +20,7 @@ const database = [
     category: 'Economy',
     title: 'Capital in the Twenty-First Century',
     author: 'Suzanne Collins',
-    percent: 0,
+    percent: 80,
     chapter: 'Introduction',
   },
 ];
