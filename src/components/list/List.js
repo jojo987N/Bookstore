@@ -1,13 +1,12 @@
-import { useState } from 'react';
-import database from '../../global';
+import { useSelector } from 'react-redux';
 import Book from '../book/Book';
 import './list.css';
 
 export default function List() {
-  const [data, setData] = useState(database);
+  const { data } = useSelector((state) => state.books);
   return (
     <div className="container-list">
-      {data.map((item) => <Book key={item.id} item={item} setData={setData} data={data} />)}
+      {data.map((item) => <Book key={item.id} item={item} />)}
     </div>
   );
 }
