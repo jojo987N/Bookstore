@@ -1,5 +1,8 @@
+import { useSelector } from 'react-redux';
+
 export default function Categories() {
+  const { status } = useSelector((state) => state.categories);
   return (
-    <div>Building</div>
+    <div>{status}</div>
   );
 }
