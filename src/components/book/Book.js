@@ -1,11 +1,14 @@
+import { useDispatch } from 'react-redux';
 import './book.css';
+import { removeBook } from '../../redux/books/booksSlice';
 
-export default function Book({ item, data, setData }) {
+export default function Book({ item }) {
   const {
     percent, category, title, author, chapter, id,
   } = item;
+  const dispatch = useDispatch();
   const deleteBook = () => {
-    setData(data.filter((item) => item.id !== id));
+    dispatch(removeBook(id));
   };
   return (
     <article>
