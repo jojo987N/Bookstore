@@ -1,17 +1,19 @@
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import './form.css';
 import { useState } from 'react';
 import { addBook } from '../../redux/books/booksSlice';
 
 export default function Form() {
   const [input, setInput] = useState('');
-  const [selected, setSelected] = useState('Action');
+  const [selected, setSelected] = useState('John Smith');
+  const { data } = useSelector((state) => state.books);
   const dispatch = useDispatch();
   const addNewBook = (e) => {
     e.preventDefault();
     dispatch(addBook({
-      category: selected,
+      author: selected,
       title: input,
+      itemId: `item${data.length + 1}`,
     }));
   };
   return (
@@ -29,9 +31,9 @@ export default function Form() {
           value={selected}
           onChange={(e) => setSelected(e.target.value)}
         >
-          <option value="Action">Action</option>
-          <option value="Science Fiction">Science Fiction</option>
-          <option value="Economy">Economy</option>
+          <option value="John Smith">John Smith</option>
+          <option value="Leo Tolstoy">Leo Tolstoy</option>
+          <option value="Richard Dawkins">Richard Dawkins</option>
         </select>
         <button className="primary-button-big" type="submit" onClick={addNewBook}>ADD BOOK</button>
 
