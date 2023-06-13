@@ -4,11 +4,11 @@ import { removeBook } from '../../redux/books/booksSlice';
 
 export default function Book({ item }) {
   const {
-    percent, category, title, author, chapter, id,
+    percent, category, title, author, chapter, itemId,
   } = item;
   const dispatch = useDispatch();
   const deleteBook = () => {
-    dispatch(removeBook(id));
+    dispatch(removeBook(itemId));
   };
   return (
     <article>
