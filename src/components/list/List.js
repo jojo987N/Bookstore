@@ -6,7 +6,7 @@ export default function List() {
   const { data } = useSelector((state) => state.books);
   return (
     <div className="container-list">
-      {data.map((item) => <Book key={item.id} item={item} />)}
+      {data.map((item) => <Book key={item.itemId} item={item} />)}
     </div>
   );
 }
