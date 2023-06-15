@@ -20,7 +20,6 @@ article {
 .School-of {
   height: 1.125rem;
   opacity: 0.5;
-  font-family: "Montserrat", sans-serif;
   font-size: 0.875rem;
   font-weight: bold;
   font-stretch: normal;
@@ -32,7 +31,6 @@ article {
 
 .Title {
   height: 1.813rem;
-  font-family: "Roboto Slab", serif;
   font-size: 1.375rem;
   font-weight: 700;
   font-stretch: normal;
@@ -43,7 +41,6 @@ article {
 }
 
 .Text-Style-6 {
-  font-family: "Roboto Slab", serif;
   font-size: 1.375rem;
   font-weight: bold;
   font-stretch: normal;
@@ -56,7 +53,6 @@ article {
 .Suzanne-Collins {
   height: 1.188rem;
   margin: 0.25rem 0 0;
-  font-family: "Roboto Slab", sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -76,7 +72,6 @@ article {
 .Edit {
   width: 4.563rem;
   height: 1.188rem;
-  font-family: "Roboto Slab", sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -120,7 +115,6 @@ article {
 .-Percent-Complete {
   width: 4.25rem;
   height: 2.438rem;
-  font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-weight: normal;
   font-stretch: normal;
@@ -134,7 +128,6 @@ article {
   width: 5rem;
   height: 1.125rem;
   opacity: 0.5;
-  font-family: "Montserrat", sans-serif;
   font-size: 0.875rem;
   font-weight: normal;
   font-stretch: normal;
@@ -153,7 +146,6 @@ article {
   width: 7.875rem;
   height: 1.125rem;
   opacity: 0.5;
-  font-family: "Roboto Slab", sans-serif;
   font-size: 0.813rem;
   font-weight: 300;
   font-stretch: normal;
@@ -164,7 +156,6 @@ article {
 }
 
 .Text-Style-7 {
-  font-family: "Roboto Slab", serif;
   font-size: 0.813rem;
   font-weight: 300;
   font-stretch: normal;
@@ -205,3 +196,10 @@ article {
   margin: 0 6%;
   background-color: #e8e8e8;
 }
+
+.roboto {
+  font-family: "Roboto Slab", sans-serif;
+ }
+ .montserrat{
+  font-family: "Montserrat", sans-serif;
+ }
