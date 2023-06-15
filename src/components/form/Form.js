@@ -10,14 +10,17 @@ export default function Form() {
   const dispatch = useDispatch();
   const addNewBook = (e) => {
     e.preventDefault();
-    const book = [`item${data.length + 1}`, [{
-      author: selected,
-      title: input,
-      item_id: `item${data.length + 1}`,
-      category: 'Action',
-    }]];
-    dispatch(addBookToStore(book));
-    dispatch(addBook(book));
+    if (input) {
+      const book = [`item${data.length + 1}`, [{
+        author: selected,
+        title: input,
+        item_id: `item${data.length + 1}`,
+        category: 'Action',
+      }]];
+      dispatch(addBookToStore(book));
+      dispatch(addBook(book));
+      setInput('');
+    }
   };
   return (
     <div>
