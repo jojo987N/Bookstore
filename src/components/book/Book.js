@@ -1,14 +1,15 @@
 import { useDispatch } from 'react-redux';
 import './book.css';
-import { removeBook } from '../../redux/books/booksSlice';
+import { removeBook, removeBookFromStore } from '../../redux/books/booksSlice';
 
 export default function Book({ item }) {
   const {
-    percent, category, title, author, chapter, itemId,
-  } = item;
+    percent, category, title, author, chapter,
+  } = item[1][0];
   const dispatch = useDispatch();
   const deleteBook = () => {
-    dispatch(removeBook(itemId));
+    dispatch(removeBookFromStore(item[0]));
+    dispatch(removeBook(item[0]));
   };
   return (
     <article>

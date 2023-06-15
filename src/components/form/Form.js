@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import './form.css';
 import { useState } from 'react';
-import { addBook } from '../../redux/books/booksSlice';
+import { addBook, addBookToStore } from '../../redux/books/booksSlice';
 
 export default function Form() {
   const [input, setInput] = useState('');
@@ -10,11 +10,14 @@ export default function Form() {
   const dispatch = useDispatch();
   const addNewBook = (e) => {
     e.preventDefault();
-    dispatch(addBook({
+    const book = [`item${data.length + 1}`, [{
       author: selected,
       title: input,
-      itemId: `item${data.length + 1}`,
-    }));
+      item_id: `item${data.length + 1}`,
+      category: 'Action',
+    }]];
+    dispatch(addBookToStore(book));
+    dispatch(addBook(book));
   };
   return (
     <div>
