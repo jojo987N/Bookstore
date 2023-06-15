@@ -3,7 +3,8 @@
   flex-direction: column;
   gap: 0.938rem;
 }
-.loading{
+
+.loading {
   text-align: center;
   font-size: 25px;
 }
