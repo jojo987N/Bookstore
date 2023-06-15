@@ -29,7 +29,7 @@ article {
 
   /* margin: 0 2.438rem 0 0; */
   opacity: 0.5;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.875rem;
   font-weight: bold;
   font-stretch: normal;
@@ -44,9 +44,9 @@ article {
   height: 1.813rem;
 
   /* margin: 0.188rem 20.188rem 0 0; */
-  font-family: RobotoSlab, serif;
+  font-family: "Roboto Slab", serif;
   font-size: 1.375rem;
-  font-weight: bold;
+  font-weight: 700;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -55,7 +55,7 @@ article {
 }
 
 .Text-Style-6 {
-  font-family: RobotoSlab, serif;
+  font-family: "Roboto Slab", serif;
   font-size: 1.375rem;
   font-weight: bold;
   font-stretch: normal;
@@ -66,10 +66,9 @@ article {
 }
 
 .Suzanne-Collins {
-  width: 6.688rem;
   height: 1.188rem;
   margin: 0.25rem 0 0;
-  font-family: RobotoSlab, sans-serif;
+  font-family: "Roboto Slab", sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -91,7 +90,7 @@ article {
   height: 1.188rem;
 
   /* margin: 0.188rem 0.938rem 0.125rem 0; */
-  font-family: RobotoSlab, sans-serif;
+  font-family: "Roboto Slab", sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -140,7 +139,7 @@ article {
   height: 2.438rem;
 
   /* margin: 0.063rem 5.75rem 0 0.688rem; */
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-weight: normal;
   font-stretch: normal;
@@ -156,7 +155,7 @@ article {
 
   /* margin: 0.438rem 4.938rem 0.75rem 0.75rem; */
   opacity: 0.5;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.875rem;
   font-weight: normal;
   font-stretch: normal;
@@ -179,7 +178,7 @@ article {
 
   /* margin: 0.063rem 3.625rem 0 3.688rem; */
   opacity: 0.5;
-  font-family: RobotoSlab, sans-serif;
+  font-family: "Roboto Slab", sans-serif;
   font-size: 0.813rem;
   font-weight: 300;
   font-stretch: normal;
@@ -190,7 +189,7 @@ article {
 }
 
 .Text-Style-7 {
-  font-family: RobotoSlab, serif;
+  font-family: "Roboto Slab", serif;
   font-size: 0.813rem;
   font-weight: 300;
   font-stretch: normal;
@@ -205,7 +204,7 @@ article {
   height: 1.313rem;
 
   /* margin: 0.438rem 6.813rem 0.25rem 3.688rem; */
-  font-family: RobotoSlab, serif;
+  font-family: "Roboto Slab", serif;
   font-size: 1rem;
   font-weight: 300;
   font-stretch: normal;
