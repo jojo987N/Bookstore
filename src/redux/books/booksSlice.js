@@ -37,7 +37,6 @@ export const addBook = createAsyncThunk('books/addBook', async (arg, { rejectWit
 export const removeBook = createAsyncThunk('books/removeBook', async (arg, { rejectWithValue }) => {
   try {
     const data = await axios.delete(`${BASE_URL}apps/${APP_ID}/books/${arg}`);
-    console.log(data);
     return data.data;
   } catch (error) {
     return rejectWithValue(error);
