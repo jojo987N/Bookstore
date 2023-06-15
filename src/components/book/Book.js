@@ -4,7 +4,7 @@ import { removeBook, removeBookFromStore } from '../../redux/books/booksSlice';
 
 export default function Book({ item }) {
   const {
-    percent, category, title, author, chapter,
+    category, title, author, chapter,
   } = item[1][0];
   const dispatch = useDispatch();
   const deleteBook = () => {
@@ -32,7 +32,7 @@ export default function Book({ item }) {
       </div>
       <div className="container-percent">
         <span className="-Percent-Complete">
-          {percent}
+          {Math.floor(64 / parseInt(item[0].slice(-1), 10))}
           %
         </span>
         <span className="Completed Text-Style-2">Completed</span>
